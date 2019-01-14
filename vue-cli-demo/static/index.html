@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+    </head>
+    </html>
+
+</head>
+<body>
+        <div class="www51buy">
+                <ul class="main_content">
+                        <li>
+                                <div class="head">
+                                        <h1>IUUI</h1>
+                                        <input type="text" placeholder="Search...">
+                                        <div class="list">
+                                                <a href="#">文档</a>
+                                                <a href="#">案例</a>
+                                                <a href="#">模板</a>
+                                                <a href="#">团队</a>
+                                        </div>
+                                </div>
+                            
+                        </li>
+                        <li>
+
+                        </li>
+                        <li>
+
+                        </li>
+                </ul>
+                <div class="bor_slide">
+                    <ul class="ctrl">
+                        <li class="item0">1</li>
+                        <li class="item1">2</li>
+                        <li class="item2">3</li>
+                    </ul>
+                </div>
+        </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+	jQuery(".www51buy .s img").hover(function(){ $(this).animate({"top":-40},200) },function(){ $(this).animate({"top":0},200) } );//鼠标移到小图时上滚动
+	jQuery(".www51buy").slide({ titCell:".bor_slide li", mainCell:".main_content", effect:"top", autoPlay:false});
+</script>
